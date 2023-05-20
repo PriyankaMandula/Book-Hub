@@ -1,0 +1,404 @@
+
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"  content="width=device-width, initial-scale=1.0">
+<title>Book Hub</title>
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="icon" href="{% static 'gol.png' %}" type="image/icon type">
+
+
+<style>
+  .banner-image {
+    background-color:#b5dfdf;
+    background-image: url( "https://wallpaperaccess.com/full/2095724.png");
+    background-image: url("https://live.staticflickr.com/5797/20815728064_67147c301e_b.jpg");
+  }
+  .vh-100 {
+    height: 500px!important;
+}
+   
+  .contact{
+  text-align: center;
+  color: rgb(250, 250, 250);
+  background-color: #0c1a1a;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+
+    body {
+      font-family: "Lato", sans-serif;
+      color: rgb(247, 248, 248);
+      color:#000203
+    }
+    
+    
+    .in{
+      float: right;
+      
+
+    }
+    .upload_button{
+      background-color: rgb(5, 0, 0);
+      color: rgb(255, 255, 255);
+      border: 2px solid #000608 ;
+      padding: 16px 25px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      border-radius: 10%;
+}
+    
+    
+    .upload_button:hover {
+      background-color: #f4f7f8;
+      color: rgb(3, 0, 0);
+    }
+
+
+    .btn-primary {
+      color: #fff;
+      background-color: #00050d;
+      border-color: #050910;
+  }
+  
+  
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100vh;
+  background: #b5dfdf;
+  background:#95cbcb5e
+}
+
+body .contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+body .contain .cardy {
+  position: relative;
+  min-width: 300px;
+  height: 350px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+    inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+    5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+body .contain .cardy:nth-child(1) .boxer .contenty a {
+  background: #000407;
+}
+
+body .contain .cardy:nth-child(2) .boxer .contenty a {
+  background: #070002;
+}
+
+body .contain .cardy:nth-child(3) .boxer .contenty a{
+  background: #000704;
+}
+
+body .contain .cardy .boxer {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: #5eaaaa;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .contain .cardy .boxer:hover {
+  transform: translateY(-50px);
+}
+
+body .contain .cardy .boxer before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+body .contain .cardy .boxer .contenty {
+  padding: 20px;
+  text-align: center;
+}
+
+body .contain .cardy .boxer .contenty h2 {
+  position: absolute;
+  top: -10px;
+  right: 30px;
+  font-size: 8rem;
+  color: rgba(255, 255, 255, 0.1);
+}
+
+body .contain .cardy .boxer .contenty h3 {
+  font-size: 1.8rem;
+  color: rgb(7, 0, 0);
+  z-index: 1;
+  transition: 0.5s;
+  margin-bottom: 15px;
+}
+
+body .contain .cardy .boxer .contenty p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(3, 0, 0, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .contain .cardy .boxer .contenty a {
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .contain .cardy .boxer .contenty a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+}
+
+.bsdk {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 9.6px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button5 {
+  background-color: rgb(7, 0, 0);
+  color: rgb(250, 248, 248);
+  border: 2px solid #555555;
+  border-radius: 10%;
+
+}
+
+.button5:hover {
+  background-color: #fcfafa;
+  color: rgb(2, 0, 0);
+}
+
+
+.text-white {
+  color: #000808!important;
+}
+
+.navbar-dark .navbar-brand {
+  color: #070000;
+}
+
+.bg-dark {
+  background: #beece2!important;
+
+}
+
+
+
+
+    </style>
+
+<title>Book Hub</title>
+
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light p-md-3">
+    <div class="container">
+     <strong> <a class="navbar-brand" href="/mainpage">Book Hub</a></strong>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="mx-auto"></div>
+        <ul class="navbar-nav">
+          
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/register" style="padding-left: 25px;">Sign Up</a>
+          </li>
+          {% if user.is_authenticated %}
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/logout" style="padding-left: 25px;">Logout</a>
+          </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link text-white" href="/login" style="padding-left: 25px;">Login</a>
+          </li>
+          {% endif %}
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#contact-section" style="padding-left: 25px;">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Banner Image  -->
+<div class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center">
+<div class="content text-center">
+<div style="margin-top: 20%;">
+    <h2>Welcome to Book Hub..!!, Dear {% if user.is_authenticated %}{{ user.username }}{% else %}Reader{% endif %}!</h2>
+        <p>
+        </p>
+
+
+      <form action="{% url 'searchbar' %}" method="get">
+          <input type = "text" name = "search" style="width: 330px; height:50px;  border:3px solid black" placeholder=" Search for books...."/>
+          <button class="bsdk button5">Search</button>
+        </form>
+        <!--
+        <form action="{% url 'searchbar' %}" method="get">
+          <input type = "text" name = "search"/>
+          <button type = "submit"> Search</button>
+        </form>
+        -->
+      <br>
+  </div>
+        {% if user.is_authenticated %}
+        <section id="upload-section">
+          <a href = "/uploadbook">
+          <button class= "upload_button" mdbBtn type="button" color="secondary" rounded="true" outline="true" mdbWavesEffect >Upload</button>
+
+          </a>
+          </section>
+        {% else %}
+        <section id="upload-section">
+          <button onclick="myFunction()" class= "upload_button" mdbBtn type="button" color="secondary" rounded="true" outline="true" mdbWavesEffect >Upload</button>
+          </a>
+          </section>
+        <script>
+          function myFunction() {
+            alert("Please Login to upload a book" );
+            window.location='/login';
+          }
+          </script>
+        {% endif %}  
+      </div> 
+    </div>
+
+  <script src="{% static 'bootstrap.bundle.min.js' %}"></script>
+  <script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add('bg-dark', 'shadow');
+      } else {
+        nav.classList.remove('bg-dark', 'shadow');
+      }
+    });
+  </script>
+<br>
+<!--<h1 style="position:relative; color:black"> <strong> Books</strong></h1>-->
+
+
+
+<div class="contain">
+
+  {% for book in books %}
+  <div class="cardy">
+    <div class="boxer">
+      <div class="contenty">
+        <h3>{{ book.title }}</h3>
+        <p>{{ book.author }}</p>
+        <a href="{{ book.pdf.url }}" class="btn btn-primary btn-sm" target="_blank">
+          Open
+        </a>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+
+<section id="contact-section" style="width: 100%;">
+    <div class="contact" >
+      <h3 class="contacttext contactus"><strong>Get in Touch</strong></h3>
+      <p class="contacttext">Email : hussain.2@iitj.ac.in</p>
+      <p class="contacttext">Contact Number : 8688649101</p>
+      <p class="contacttext">IIT Jodhpur</p>
+<!--<p> "If you have any suggestions or requirements you are always invited to contact us by email or whatsapp and we will
+   be sure to get back to you as soon as possible"</p>-->
+   
+
+      <a href="https://github.com/PriyankaMandula"><i class="fa fa-github" style="font-size:36px; color:rgb(248, 247, 247)"></i></a>
+      <a href="https://www.linkedin.com/in/priyanka-mandula-602408249"><i class="fa fa-linkedin-square" style="font-size:36px;color:white;padding-left:25px;"></i>
+      </a>
+      <a href="https://instagram.com/priyanka.m_1106?igshid=MzNlNGNkZWQ4Mg==" ><i class="fa fa-instagram" style="font-size:36px;color:white;padding-left:25px;"></i>
+      </a>
+      
+</section>
+</body>
+</html>                                               
+
+
+
+
+
+
+
+
+
+
+
+

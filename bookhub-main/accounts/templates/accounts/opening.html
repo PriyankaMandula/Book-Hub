@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="{% static 'gol.png' %}" type="image/icon type">
+<link rel="stylesheet" media="mediatype and|not|only (expressions)" href="print.css">
+
+
+<style>
+  body, html {height: 100%}
+  .w3-jumbo{
+    font-size: 38px!important;
+    line-height: 0.1em;
+
+  }
+  .w3-animate-top {
+    position: relative;
+    animation: animatetop 1s;
+
+}
+        
+        
+            .button {
+              border-radius: 4px;
+              background-color: rgba(252, 250, 250, 0.438);
+              border: none;
+              color: #080000;
+              text-align: center;
+              font-size: 35px;
+              padding: 8px;
+              width: 250px;
+              transition: all 0.5s;
+              cursor: pointer;
+              top:66%;
+              right: 41.8%
+            }
+            
+            .button span {
+              cursor: pointer;
+              display: inline-block;
+              position: relative;
+              transition: 0.5s;
+            }
+            
+            .button span:after {
+              content: '\00bb';
+              position: absolute;
+              opacity: 0;
+              top: 0;
+              right: -20px;
+              transition: 0.5s;
+            }
+            
+            .button:hover span {
+              padding-right: 20px;
+            }
+            
+            .button:hover span:after {
+              opacity: 1;
+              right: 0;
+            }
+            .bgimg {
+              background-image: url("{% static 'openi.jpg' %}");
+            
+    min-height: 100%;
+              background-position: center;
+              background-size: cover;                 
+            }
+
+            *, *:before, *:after {
+              box-sizing: inherit;
+          }
+          
+          
+</style>
+
+
+
+<title> Book Hub </title> 
+</head>
+
+<body>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+   <strong>Book Hub</strong> 
+  </div>
+  <div class="w3-display-middle">
+    <pre>
+    <h1 class="w3-jumbo w3-animate-top"  > <span> Welcome to Book Hub </span>  </h1>
+  </pre>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">References for you..</p>
+    <br>
+    <a href="/mainpage">
+      <center>
+        <button class="w3-large w3-center button"><span>Click here..</span></button>  </center>
+
+  </a>
+  </div>
+  </div>
+      
+</body>
+</html>
+
+

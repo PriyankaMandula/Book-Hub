@@ -1,0 +1,8 @@
+asgiref
+Django
+django-crispy-forms
+psycopg2
+pytz
+sqlparse
+typing-extensions
+crispy-bootstrap5

@@ -1,0 +1,52 @@
+{% load static %}
+
+<link rel="icon" href="{% static 'gol.png' %}" type="image/icon type">
+
+<div style="background-color: #316372;">
+  
+  <!--
+<style>
+  .body{
+    background-image: "{ % url 'https://t3.ftcdn.net/jpg/01/57/52/02/360_F_157520243_yzL8Q3ovspZgrTLW1zbhYHCn1uGmzosn.jpg' %}";
+}
+</style>
+-->
+<title>Book Hub - Upload</title>
+
+
+<body>
+  {% load crispy_forms_tags %}
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <center>
+  	<div class="container h-100">
+
+  <!--<div class="col-sm-4 col-sm-offset-4 " style="text-align: justify; color:whitesmoke">-->
+    <div  style="text-align: justify; color:rgb(253, 255, 255);border-color: black;font-size:17px">
+  <br>
+  <br>
+  <br>
+
+    <br>
+    <center><h2 style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:rgb(253, 255, 255)"><strong>Upload Book</strong></h2></center>
+  <br> 
+  <br>
+  <br>
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+     {{ form|crispy }}
+     <br>
+     <center><button type="submit" class="w3-button w3-black w3-round-xlarge">Upload Book</button></center>
+      <br>
+    </form>
+  </center>
+  </div>
+  </div>
+  
+  <style>
+  .w3-btn {width:150px;}
+  </style>
+</body>
