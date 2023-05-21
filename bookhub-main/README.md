@@ -50,6 +50,6 @@ $ python manage.py runserver
 
 | Name                                            | Roll Number | Year      | Department             |
 | ----------------------------------------------- | ----------- | --------- | ---------------------- |
-| [PriyankaMandula](https://github.com/PriyankaMandula)    | B19BB025   | Sophomore | Bioscience and bioengineering  |
+| [PriyankaMandula](https://github.com/PriyankaMandula)    | B19BB025   | Final Year | Bioscience and bioengineering  |
 |
 
