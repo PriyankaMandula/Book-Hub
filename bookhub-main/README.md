@@ -1,7 +1,7 @@
 # BookHub
 Django Project
 
-View website here: http://bookhub.pythonanywhere.com/
+View website here: https://djangoproject100.pythonanywhere.com/
 
 ## Table of contents
 * [Information](#Information)
